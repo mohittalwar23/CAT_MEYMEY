@@ -1,5 +1,5 @@
-Hi this is a basic cat meme app i have started to revise my android basics with XML
+This is a meme project i am working on to brush up my basics of kotlin , xml etc.
 
-i am sure one day this app would be pretty great
+Follow for more :)
 
-Thank you for supporting!
+NEW APP
