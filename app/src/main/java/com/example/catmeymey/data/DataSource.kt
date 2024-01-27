@@ -8,23 +8,28 @@ object DataSource {
     val cats: List<Cat> = listOf(
         Cat(
             R.drawable.banana_before,
-            "Banana Cat"
+            "Banana Cat",
+            R.raw.banana
         ),
         Cat(
             R.drawable.happy,
-            "Happy Cat"
+            "Happy Cat",
+            R.raw.happy
         ),
         Cat(
             R.drawable.maxwell,
-            "Maxwell cat"
+            "Maxwell cat",
+            R.raw.maxwell
         ),
         Cat(
             R.drawable.chippi,
-            "Chippi Chippi Cat"
+            "Chippi Chippi Cat",
+            R.raw.chippi
         ),
         Cat(
             R.drawable.drama,
-            "Drama Kitten"
+            "Drama Kitten",
+            R.raw.drama
         )
     )
 }
