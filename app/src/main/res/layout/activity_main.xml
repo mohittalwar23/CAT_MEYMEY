@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E1FBFF"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#E1FBFF"
+        android:fontFamily="@font/luckiest_guy"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/cat_memes"
+        android:textColor="#0F1313"
+        android:textSize="40sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/headerTextView"
         android:padding="8dp" />
 
 </RelativeLayout>
