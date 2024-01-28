@@ -22,8 +22,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardElevation="4dp"
-    app:cardCornerRadius="4dp"
-    app:cardBackgroundColor="#CCE5FF">
+    app:cardBackgroundColor="?attr/colorPrimary"
+    app:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:textAlignment="center"
+            android:textColor="?attr/colorOnPrimary"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

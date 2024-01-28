@@ -7,7 +7,7 @@ object DataSource {
 
     val cats: List<Cat> = listOf(
         Cat(
-            R.drawable.banana_before,
+            R.drawable.banana,
             "Banana Cat",
             R.raw.banana
         ),

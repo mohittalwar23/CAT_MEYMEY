@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E1FBFF"
+    android:background="?attr/colorPrimaryVariant"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="#E1FBFF"
         android:fontFamily="@font/luckiest_guy"
         android:gravity="center"
         android:padding="5dp"
+        android:background="?attr/colorPrimaryVariant"
         android:text="@string/cat_memes"
-        android:textColor="#0F1313"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="40sp" />
 
     <androidx.recyclerview.widget.RecyclerView
