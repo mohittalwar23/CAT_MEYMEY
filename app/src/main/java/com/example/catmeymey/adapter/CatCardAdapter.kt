@@ -1,6 +1,7 @@
 package com.example.catmeymey.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.media.MediaPlayer
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +9,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RawRes
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.catmeymey.R
+import com.example.catmeymey.SecondActivity
 import com.example.catmeymey.data.DataSource
 import com.example.catmeymey.model.Cat
 
@@ -21,7 +24,7 @@ class CatCardAdapter(
     private val cats: List<Cat> = DataSource.cats
     private var mediaPlayer: MediaPlayer? = null
 
-    class CatCardViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class CatCardViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imageView: ImageView? = view.findViewById(R.id.cat_image)
         val nameTextView: TextView? = view.findViewById(R.id.cat_name)
     }
@@ -41,6 +44,10 @@ class CatCardAdapter(
 
         // Set a click listener on the itemView (the entire card)
         holder.itemView.setOnClickListener {
+            val intent = Intent(context, SecondActivity::class.java)
+            intent.putExtra("drawableResourceId", currentCat.drawableResourceId)
+            context?.startActivity(intent)
+
             playMp3(currentCat.soundResourceId)
         }
     }

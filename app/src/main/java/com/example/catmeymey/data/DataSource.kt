@@ -9,27 +9,32 @@ object DataSource {
         Cat(
             R.drawable.banana,
             "Banana Cat",
-            R.raw.banana
+            R.raw.banana,
+            R.drawable.banana_gif
         ),
         Cat(
             R.drawable.happy,
             "Happy Cat",
-            R.raw.happy
+            R.raw.happy,
+            R.drawable.banana_gif
         ),
         Cat(
             R.drawable.maxwell,
             "Maxwell cat",
-            R.raw.maxwell
+            R.raw.maxwell,
+            R.drawable.banana_gif
         ),
         Cat(
             R.drawable.chippi,
             "Chippi Chippi Cat",
-            R.raw.chippi
+            R.raw.chippi,
+            R.drawable.banana_gif
         ),
         Cat(
             R.drawable.drama,
             "Drama Kitten",
-            R.raw.drama
+            R.raw.drama,
+            R.drawable.banana_gif
         )
     )
 }
