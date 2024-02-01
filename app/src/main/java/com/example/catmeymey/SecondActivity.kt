@@ -74,6 +74,5 @@ class SecondActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
         }
-g
     }
 }
