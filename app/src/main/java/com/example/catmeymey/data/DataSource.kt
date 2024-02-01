@@ -16,25 +16,25 @@ object DataSource {
             R.drawable.happy,
             "Happy Cat",
             R.raw.happy,
-            R.drawable.banana_gif
+            R.drawable.happy_gif
         ),
         Cat(
             R.drawable.maxwell,
             "Maxwell cat",
             R.raw.maxwell,
-            R.drawable.banana_gif
+            R.drawable.maxwell_gif
         ),
         Cat(
             R.drawable.chippi,
             "Chippi Chippi Cat",
             R.raw.chippi,
-            R.drawable.banana_gif
+            R.drawable.chipi_gif
         ),
         Cat(
             R.drawable.drama,
             "Drama Kitten",
             R.raw.drama,
-            R.drawable.banana_gif
+            R.drawable.drama_gif
         )
     )
 }
