@@ -12,6 +12,7 @@ import androidx.core.graphics.drawable.toBitmap
 import com.bumptech.glide.Glide
 import java.io.File
 import java.io.FileOutputStream
+import java.io.InputStream
 
 class SecondActivity : AppCompatActivity() {
 
@@ -33,14 +34,26 @@ class SecondActivity : AppCompatActivity() {
 
         shareButton.setOnClickListener {
             try {
-                // Convert ImageView to a Bitmap
-                val bitmap = imageView.drawable.toBitmap()
+                // Retrieve the GIF resource ID from the Intent
+                val drawableResourceId = intent.getIntExtra("drawableResourceId", 0)
 
-                // Save the Bitmap to a temporary file in external cache directory
+                // Get the InputStream for the GIF from the resources
+                val inputStream: InputStream = resources.openRawResource(drawableResourceId)
+
+                // Save the GIF to a temporary file in the external cache directory
                 val cacheDir = externalCacheDir
                 val file = File(cacheDir, "shared_image.gif")
                 val fileOutputStream = FileOutputStream(file)
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream)
+
+                // Copy the GIF data from the InputStream to the FileOutputStream
+                inputStream.use { input ->
+                    fileOutputStream.use { output ->
+                        input.copyTo(output)
+                    }
+                }
+
+                // Close the streams
+                inputStream.close()
                 fileOutputStream.close()
 
                 // Create and start the share intent
@@ -61,8 +74,6 @@ class SecondActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
         }
-
-
-
+g
     }
 }
