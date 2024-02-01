@@ -8,4 +8,5 @@ Completed the First Draft of the APP with recycle views / classes and adapters  
 Completed the Second Draft of the APP with intents and Activity :)              v2
 - Gif functionality added
 - App supports sharing gif with implicit intents now :)                         v2-2.O
+- bug fixed
 
